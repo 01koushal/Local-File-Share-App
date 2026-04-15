@@ -1,0 +1,28 @@
+Each time you want to use the app, you need to start both backend and frontend again.
+
+Use these 2 terminals:
+
+Terminal 1: backend
+
+cd "d:\Devops\Local File Share App\server"
+npm run dev
+Terminal 2: frontend
+
+cd "d:\Devops\Local File Share App\client"
+$env:PORT=4173
+npm start
+Then open:
+
+http://10.3.71.110:4173
+Keep both terminals open while using the app.
+
+If you close them, the app stops.
+
+Easy rule
+
+server terminal = file upload/download API
+client terminal = website UI
+If your IP changes later, check it with:
+
+ipconfig
+and replace 10.3.71.110 with the new IP.
